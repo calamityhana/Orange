@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans:wght@400;700&display=swap');
+/* font-family: 'Montserrat', sans-serif; 600
+font-family: 'Noto Sans', sans-serif; 400 700 */
+
+/* --------------- */
+body {
+    background-color: rgb(247, 237, 237);
+    font-size: 18px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h2 {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3, h4, h5, h6 {
+    color: rgb(68, 69, 143);
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hide {
+    display: none !important;
+}
+
+.active-img {
+    filter: none !important;
+}
+
+span {
+    font-weight: 700;
+}
+
+.opasity {
+    transition: 0.3s;
+}
+
+.opasity:hover {
+    opacity: 70%;
+}
+
+.opasity:active {
+    opacity: 100%;
+}
+
+/* HEADER--------------------------- */
+header {
+    background-color: rgba(247, 237, 237, 0.952);
+    padding: 5px 0; 
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    border-radius: 10px;
+}
+
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 80px;
+    text-align: center;
+    padding: 2px;
+    background-color: rgba(54, 43, 43, 0.041);
+}
+
+.header ul {
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header span {
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+
+/* -----------Обо мне------- */
+.about {
+    margin-top: 50px;
+}
+
+.about h2 {
+    padding-top: 35px;
+}
+
+.about h3 {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.about h4 {
+    margin-top: 30px;
+    margin-left: 10px;   
+}
+
+.about__info {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.about ul {
+    margin-top: 20px;
+    padding: 20px 20px 20px 30px;
+    border-radius: 15px;
+    background-color: rgba(229, 255, 0, 0.103);
+    border: 1px solid black;
+}
+
+.about li + li {
+    position: relative;
+    margin-top: 10px;
+}
+
+.about li + li::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    bottom: 50%;
+    left: -15px;
+    transform: translateY(50%);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.about p {
+    max-width: 900px;
+    margin: 15px auto 15px;
+}
+
+.about p>a {
+    font-weight: 700;
+    text-decoration: underline;
+    color: rgb(19, 15, 75);
+}
+
+/* -----------------опыт работы---------------------- */
+
+.work {
+    margin-top: 30px;
+}
+
+.work__wrapper {
+    display: flex;
+    margin-top: 14px;
+    justify-content: flex-start;
+    gap: 60px;
+    font-size: 16px;
+}
+
+.work__wrapper p {
+    max-width: 200px;
+}
+
+.work__wrapper h6 {
+    color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.work__wrapper ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 700px;
+    font-size: 15px;
+}
+
+
+/* -----------прокеты, первый проект */
+.project__item {
+    margin-top: 30px;
+}
+
+.project__wrapper--flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.project__item--text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.project__item--yt iframe {
+    border: 3px solid rgba(0, 0, 0, 0.767);
+    border-radius: 10px;
+}
+
+.project__item--text ul {
+    margin-left: 20px;
+    list-style-type: circle;
+}
+
+/* ------------------------------------second----------- */
+
+.slider {
+    position: relative;
+}
+
+.projects__slider button {
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(0, 0, 0, 0.767);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.342);
+}
+
+.prev, .prev-first {
+    left: 5%;
+    
+}
+
+.next, .next-first {
+    right: 5%;
+}
+
+.projects__slider {
+ padding: 50px;
+}
+
+.projects img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 476px;
+}
+
+
+/* -------------------------------слайдер-------------------------------------------- */
+
+
+/* -------------------------------блендер-------------------------------------------- */
+.project__blender {
+    text-align: center;
+
+}
+
+.blender-img {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.blender-img img {
+    height: 100%;
+}
+
+
+.blender-img a {
+    width: 45%;
+    height: 250px;
+}
+
+/* -----------------------footer------------------------ */
+.footer {
+    margin-top: 50px;
+}
+
+.footer h3 {
+    margin-left: 40px;
+}
+
+.footer__main--link {
+    font-size: 20px;
+    color: rgb(211, 4, 4) !important;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+.footer__link {
+    display: flex;
+}
+
+.footer__title {
+    font-size: 14px;
+    color: #000;
+}
+
+.footer__subtitle {
+    font-size: 12px;
+    color: rgb(146, 122, 122);
+}
+
+.footer__wrapper {
+    border: 1px solid rgb(211, 208, 208);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.footer__wrapper--url {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.footer__url {
+    font-size: 12px;
+}
+
+.footer__img {
+    width: 215px;
+}
+
+.footer__img--social {
+    width: 20px;
+    height: 20px;
+}
+
+.mail {
+    display: block;
+    text-align: center;
+    margin: 40px auto;
+    padding: 10px;
+    color: rgb(206, 10, 10);
+    font-size: 25px;
+}
