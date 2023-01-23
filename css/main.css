@@ -142,9 +142,9 @@ header {
 .about ul {
     margin-top: 20px;
     padding: 20px 20px 20px 30px;
-    border-radius: 15px;
-    background-color: rgba(229, 255, 0, 0.103);
+    border-radius: 7px;
     border: 1px solid black;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.438);
 }
 
 .about li + li {
