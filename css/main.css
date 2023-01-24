@@ -95,6 +95,15 @@ header {
     align-items: center;
 }
 
+.header__logo--wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header__container img {
+    width: 90px;
+}
+
 .header__logo {
     width: 80px;
     text-align: center;
@@ -313,7 +322,7 @@ header {
 
 .footer__main--link {
     font-size: 20px;
-    color: rgb(211, 4, 4) !important;
+    color: black !important;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
 }
@@ -322,7 +331,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #fcc68c48;
     padding: 10px 50px;
+    margin-top: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.438);
 }
 .footer__link {
     display: flex;
@@ -339,7 +354,7 @@ header {
 }
 
 .footer__wrapper {
-    border: 1px solid rgb(211, 208, 208);
+    border: 1px solid black;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -366,11 +381,33 @@ header {
     height: 20px;
 }
 
-.mail {
-    display: block;
+.footer__mail {
+    display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     margin: 40px auto;
     padding: 10px;
-    color: rgb(206, 10, 10);
+    gap: 25px;
+}
+
+.footer__mail img {
+    margin-top: 10px;
+    width: 60px;
+    opacity: 80%;
+}
+
+.mail {
+    color: rgb(0, 0, 0);
     font-size: 25px;
+}
+
+.footer__mail--wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer__mail--wrapper svg {
+    margin-top: 5px;
 }
