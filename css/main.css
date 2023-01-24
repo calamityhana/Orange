@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap');
 /* font-family: 'Montserrat', sans-serif; 600
-font-family: 'Noto Sans', sans-serif; 400 700 */
+font-family: 'Noto Sans', sans-serif; 400 700 
+font-family: 'Roboto Slab', serif; 400 600
+*/
 
 /* --------------- */
 body {
@@ -16,12 +19,8 @@ body {
 }
 
 h1 {
-    font-family: 'Noto Sans', sans-serif;
-}
-
-h2 {
-    font-weight: 600;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 h3, h4, h5, h6 {
@@ -32,6 +31,7 @@ h3, h4, h5, h6 {
 
 h2 {
     font-size: 35px;
+    font-family: 'Roboto Slab', sans-serif;
 }
 
 h3 {
@@ -46,7 +46,6 @@ h5 {
     font-size: 20px;
     letter-spacing: 1px;
     font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .hide {
@@ -58,7 +57,7 @@ h5 {
 }
 
 span {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .opasity {
@@ -115,7 +114,7 @@ header {
     display: flex;
     gap: 20px;
     font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
 }
 
 .header span {
@@ -144,34 +143,24 @@ header {
 
 .about__info {
     display: flex;
-    justify-content: space-evenly;
-    gap: 15px;
+    justify-content: center;
+    gap: 25px;
 }
 
 .about ul {
+    width: 40%;
     margin-top: 20px;
     padding: 20px 20px 20px 30px;
     border-radius: 7px;
     border: 1px solid black;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.438);
+    background-color: #fcc68c48;;
 }
 
 .about li + li {
     position: relative;
     margin-top: 10px;
-}
-
-.about li + li::after {
-    content: "";
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.507);
-    border-radius: 50%;
-    width: 7px;
-    height: 7px;
-    bottom: 50%;
-    left: -15px;
-    transform: translateY(50%);
-    border: 1px solid rgb(0, 0, 0);
+    list-style-type: circle;
 }
 
 .about p {
@@ -314,6 +303,7 @@ header {
 /* -----------------------footer------------------------ */
 .footer {
     margin-top: 50px;
+    font-family: 'Roboto Slab', sans-serif;
 }
 
 .footer h3 {
@@ -321,10 +311,11 @@ header {
 }
 
 .footer__main--link {
+    margin-left: 20px;
     font-size: 20px;
     color: black !important;
     font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
+    
 }
 
 .footer__social {
@@ -332,13 +323,17 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #fcc68c48;
-    padding: 10px 50px;
-    margin-top: 10px;
+    margin: 20px auto 0;
+    width: 80%;
     border: 1px solid;
     border-radius: 5px;
-    
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.438);
 }
+
+.footer__social img {
+    object-fit: contain;
+}
+
 .footer__link {
     display: flex;
 }
@@ -354,7 +349,7 @@ header {
 }
 
 .footer__wrapper {
-    border: 1px solid black;
+    border-left: 1px solid black;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -386,15 +381,15 @@ header {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 40px auto;
+    margin: 30px auto 10px;
     padding: 10px;
     gap: 25px;
 }
 
 .footer__mail img {
     margin-top: 10px;
-    width: 60px;
-    opacity: 80%;
+    width: 50px;
+    opacity: 90%;
 }
 
 .mail {
