@@ -92,6 +92,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .header__logo--wrapper {
@@ -223,12 +224,15 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 50%;
 }
 
 
-.project__item--yt iframe {
-    border: 3px solid rgba(0, 0, 0, 0.767);
-    border-radius: 10px;
+iframe{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    width: 50%;
+    height: 300px;
 }
 
 .project__item--text ul {
@@ -405,4 +409,183 @@ header {
 
 .footer__mail--wrapper svg {
     margin-top: 5px;
+}
+
+@media(max-width: 1000px) {
+    .work__wrapper {
+        gap: 10px;
+        justify-content: space-around;
+    }
+    .work__wrapper ul {
+        width: 500px;
+    }
+    .project__wrapper--flex {
+        flex-direction: column;
+    }
+    .project__item--text {
+        margin-top: 20px;
+        width: 90%;
+    }
+    iframe { 
+        width: 500px;
+        height: 300px;    
+    }
+    .projects__slider {
+        width: 500px;
+        margin: 15px auto;
+        padding: 0;
+    }
+    .footer h3 {
+        text-align: center;
+        margin-left: 0;
+    }
+    .footer__social {
+        flex-direction: column;
+    }
+    .footer__main--link {
+        margin-left: 0px;
+        border-bottom: 1px solid #000;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+    .footer__link {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .footer__wrapper {
+        border-left: none;
+        max-width: 400px;
+        padding: 5px;
+    }
+    .footer__img {
+        width: 170px;
+    }
+}
+
+@media(max-width: 650px) {
+    .header__container {
+        padding: 20px 0;
+    }
+    .header__logo--wrapper img {
+        width: 85px;
+        position: absolute;
+        left: 10px;
+        opacity: 20%;
+    }
+    .header__menu {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .header__logo {
+        display: none;
+    }
+    .header__logo--wrapper img {
+        z-index: -1;
+    }
+    .about__info {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        text-align: center;
+    }
+    .about__info ul {
+        width: 70%;
+    }
+    .work__wrapper {
+        margin-top: 30px;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+    .work__wrapper ul {
+        max-width: 100%;
+        font-size: 18px;
+        margin: 0 auto;
+    }
+    .work__wrapper p {
+        max-width: 100%;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    h2, h3, h4 {
+        margin: 0;
+        text-align: center;
+    }
+    iframe {
+        width: 400px;
+        height: 250px;
+    }
+    .projects__slider {
+        width: 400px;
+    }
+    .blender-img {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 0;
+        padding: 10px;
+    }
+    .blender-img a {
+        height: auto;
+        width: 90%;
+    }
+    .footer__img {
+        display: none;
+    }
+    .footer__wrapper {
+        text-align: center;
+        margin: 0 auto;
+        gap: 5px;
+        padding: 10px;
+    }
+    .footer__wrapper--url {
+        margin: 0 auto;
+    }
+    .footer__social {
+        width: 100%;
+    }
+}
+
+@media(max-width: 430px) {
+    .header__container {
+        padding: 10px 0;
+    }
+    .header__menu ul {
+        gap: 10px;
+    }
+    .header__logo--wrapper span {
+        font-size: 16px;
+    }
+    .about__info ul {
+        width: 90%;
+    }
+    iframe {
+        width: 280px;
+        height: 180px;
+    }
+    .projects__slider {
+        width: 280px;
+    }
+    .footer__url {
+        display: none;
+    }
+    .footer__url+.hide {
+        display: block !important;
+        margin: 0;
+    }
+    .footer__mail--wrapper {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 430px) {
+    .header__menu li {
+        width: 90px;
+    }
+    .header__menu ul {
+        align-items: center;
+    }
 }
