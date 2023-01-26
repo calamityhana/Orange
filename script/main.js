@@ -1,7 +1,7 @@
-const sliderArrowsItems = document.querySelectorAll(".slider-items a"),
+const sliderArrowsItems = document.querySelectorAll(".slider-items-first a"),
       nextArrow = document.querySelector(".next"),
       prevArrow = document.querySelector(".prev"),
-      sliderFirstItems = document.querySelectorAll(".slider-items-first a"),
+      sliderFirstItems = document.querySelectorAll(".slider-items-second a"),
       nextFirst = document.querySelector(".next-first"),
       prevFirst = document.querySelector(".prev-first");
 
@@ -42,7 +42,7 @@ prevFirst.addEventListener("click", function() {
 
 // hideSlide(sliderBtns, sliderItems);
 
-const navBtn = document.querySelectorAll(".header__menu a");
+const navBtn = document.querySelectorAll(".menu a");
 
 navBtn.forEach(btn => btn.addEventListener("click", function(event) {
     event.preventDefault();
